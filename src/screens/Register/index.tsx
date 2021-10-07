@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../../components/Form/Button';
 
 import { Input } from '../../components/Form/Input'
+import { TransactionTypeButton } from '../../components/Form/TransactionTypeButton';
+import { CategorySelect } from '../../components/Form/CategorySelect';
 
 import { 
   Container,
@@ -9,9 +11,16 @@ import {
   Title,
   Form,
   Fields,
+  TransactionTypes,
 } from './styles';
 
 export function Register() {
+  const [transactionType, setTransactionType] = useState('');
+
+  function handleTransactionTypeSelect(type: 'up' | 'down'){
+    setTransactionType(type);
+  }
+
   return (
     <Container>
       <Header>
@@ -25,6 +34,23 @@ export function Register() {
           />
           <Input 
             placeholder="Preço"
+          />
+          <TransactionTypes>
+            <TransactionTypeButton 
+              type="up"
+              title="Entrada"
+              onPress={() => handleTransactionTypeSelect('up')}
+              isActive={transactionType === 'up'}
+            />
+            <TransactionTypeButton 
+              type="down"
+              title="Saída"
+              onPress={() => handleTransactionTypeSelect('down')}
+              isActive={transactionType === 'down'}
+            />
+          </TransactionTypes>
+          <CategorySelect 
+            title="Categoria"
           />
         </Fields>
         
