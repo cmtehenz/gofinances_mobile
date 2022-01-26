@@ -32,6 +32,16 @@ export function SignIn() {
     }
   }
 
+  async function handleSignInWithApple(){
+    try {
+      signInWithApple();
+    }catch(e) {
+      console.error(e)
+      //todo : retirar error do alert
+      Alert.alert('Erro ao tentar logar com Apple: '+ e);
+    }
+  }
+
   return(
     <Container>
       <Header>
@@ -58,15 +68,23 @@ export function SignIn() {
           <SignInSocialButton 
             title="Entrar com Google" 
             svg={GoogleSvg} 
-            onPress={()=> handleSignInWithGoogle()}
+            onPress={handleSignInWithGoogle}
             />
           
           <SignInSocialButton 
             title="Entrar com Apple" 
-            svg={AppleSvg} />
+            svg={AppleSvg} 
+          />
+          {
+            // TODO: FAZER LOGIN APPLE
+          }
         </FooterWrapper>
       </Footer>
 
     </Container>
   )
+}
+
+function signInWithApple() {
+  throw new Error('Function not implemented.');
 }
