@@ -13,12 +13,9 @@ import {
 
 import theme from './src/global/styles/theme';
 
-import { NavigationContainer } from '@react-navigation/native';
+import { Routes } from './src/routes';
 
-import { AppRoutes} from './src/routes/app.routes';
-
-import { SignIn } from './src/screens/SignIn';
-import { AuthProvider } from './src/hooks/auth';
+import { AuthProvider, useAuth } from './src/hooks/auth';
 
 export default function App() {
   const [ fontsLoaded ] = useFonts({
@@ -27,19 +24,18 @@ export default function App() {
     Poppins_700Bold
   });
 
-  if(!fontsLoaded) {
+  const { isUserLoading } = useAuth();
+
+  if(!fontsLoaded || isUserLoading) {
     return <AppLoading />
   }
 
   return (
     <ThemeProvider theme={theme}>
-      <NavigationContainer>
-        <StatusBar barStyle="light-content"/>
+      <StatusBar barStyle="light-content"/>
         <AuthProvider >
-          <SignIn />
+          <Routes />
         </AuthProvider>
-        
-      </NavigationContainer>
     </ThemeProvider>
   ) 
 }

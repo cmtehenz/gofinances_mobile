@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -25,6 +25,7 @@ import {
   LogoutButton,
   LoadContainer,
 } from './styles';
+import { useAuth } from '../../hooks/auth';
 
 export interface DataListProps extends TransactionCardProps {
  id: string
@@ -42,6 +43,7 @@ interface HighlightDataProps {
 }
 
 export function Dashboard(){
+  const { user, signOut } = useAuth();
   const [ isLoading, setIsLoading ] = useState(true);
   const [ data, setData ] = useState<DataListProps[]>([]);
   const [ highlightData, setHighlightData ] = useState<HighlightDataProps>({} as HighlightDataProps);
@@ -52,17 +54,16 @@ export function Dashboard(){
     collection: DataListProps[],
     type: 'positive' | 'negative'
     ) {
-
+      
       const lastTransaction = Math.max.apply(Math, collection
         .filter(item => item.type === type)
         .map(item => new Date(item.date).getTime())
       )
-
+      
       return Intl.DateTimeFormat('pt-BR', {
         day: '2-digit',
         month: 'long',
       }).format(new Date(lastTransaction))
-
   }
 
   async function loadTransactions(){
@@ -138,10 +139,6 @@ export function Dashboard(){
     setIsLoading(false);
   }
 
-  useEffect(() => {
-    loadTransactions();
-  },[]);
-
   useFocusEffect(useCallback(() => {
     loadTransactions();
   },[]))
@@ -162,14 +159,14 @@ export function Dashboard(){
         <Header>
           <UserWrapper>
             <UserInfo>
-              <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/10881123?v=4'}} />
+              <Photo source={{ uri: user.photo }} />
               <User>
                 <UserGreeting>Olá,</UserGreeting>
-                <UserName>Gustavo</UserName>
+                <UserName>{user.name}</UserName>
               </User>
             </UserInfo>
             
-            <LogoutButton onPress={() => {}}>
+            <LogoutButton onPress={signOut}>
               <Icon name="power"/>
             </LogoutButton>
           </UserWrapper>        

@@ -1,6 +1,7 @@
-import React from 'react';
-import { Alert } from 'react-native';
+import React, { useState } from 'react';
+import { ActivityIndicator, Alert } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { useTheme } from 'styled-components';
 
 import AppleSvg from '../../assets/apple.svg';
 import GoogleSvg from '../../assets/google.svg';
@@ -20,26 +21,33 @@ import {
 } from './styles';
 
 export function SignIn() {
-  const { signInWithGoogle } = useAuth();
+  const [ isLoading, setIsLoading] = useState(false);
+  
+  const { signInWithGoogle, signInWithApple } = useAuth();
+  const theme = useTheme();
 
   async function handleSignInWithGoogle(){
     try {
-      await signInWithGoogle();
+      setIsLoading(true);
+      return await signInWithGoogle();
     }catch(e) {
       console.error(e)
-      //todo : retirar error do alert
-      Alert.alert('Erro ao tentar logar com Google: '+ e);
+      Alert.alert('Erro ao tentar logar com a conta Google.');
+      setIsLoading(false);
     }
+    
   }
 
   async function handleSignInWithApple(){
     try {
-      signInWithApple();
+      setIsLoading(true)
+      return await signInWithApple();
     }catch(e) {
       console.error(e)
-      //todo : retirar error do alert
-      Alert.alert('Erro ao tentar logar com Apple: '+ e);
+      Alert.alert('Erro ao tentar logar com a conta Apple. ');
+      setIsLoading(false);
     }
+    
   }
 
   return(
@@ -73,18 +81,18 @@ export function SignIn() {
           
           <SignInSocialButton 
             title="Entrar com Apple" 
-            svg={AppleSvg} 
+            svg={AppleSvg}
+            onPress={handleSignInWithApple}
           />
-          {
-            // TODO: FAZER LOGIN APPLE
-          }
         </FooterWrapper>
+        { 
+        isLoading && 
+          <ActivityIndicator 
+            color={theme.colors.shape}
+            style={{ marginTop: 18}}
+          /> 
+        }
       </Footer>
-
     </Container>
   )
-}
-
-function signInWithApple() {
-  throw new Error('Function not implemented.');
 }
