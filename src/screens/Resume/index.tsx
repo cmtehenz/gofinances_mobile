@@ -7,6 +7,8 @@ import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs'
 import { VictoryPie } from 'victory-native';
 import { addMonths, subMonths, format } from 'date-fns';
 import { ptBR } from 'date-fns/locale'; 
+import { useFocusEffect } from '@react-navigation/native';
+import { useAuth } from '../../hooks/auth';
 
 import { HistoryCard } from '../../components/HistoryCard';
 
@@ -23,7 +25,7 @@ import {
   LoadContainer
 } from './styles'
 import { categories } from '../../utils/categories';
-import { useFocusEffect } from '@react-navigation/native';
+
 
 
 export interface Props {
@@ -50,6 +52,8 @@ export function Resume(){
 
   const theme = useTheme();
 
+  const { user } = useAuth();
+
   function handleDateChange(action: 'prev' | 'next' ){  
     if(action === 'prev'){
       setSelectedDate(subMonths(selectedDate, 1));
@@ -60,7 +64,7 @@ export function Resume(){
 
   async function loadData(){
     setIsLoading(true);
-    const dataKey = '@gofinances:transactions';
+    const dataKey = `@gofinances:transactions_user:${user.id}`;
     const result = await AsyncStorage.getItem(dataKey);
     const resultFormatted = result ? JSON.parse(result) : [];
     
