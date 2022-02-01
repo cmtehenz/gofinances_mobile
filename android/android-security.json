@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pc-api-6940803112862480171-251",
+  "private_key_id": "4e708610413f1db93f973ca31b01411c195c9bd7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC808MRRS4kyEFL\n0klMtIN34jRstRsjgJBCxUmvk5qjdYNNSjRb9M2ibkAFMhMxKCV2FJjlcGwC9/Qf\nKBi5cgyKn5oVu4msR4XYM8voGu5/mQqdx70XX62WrV7MDOHM3nzErORh2bvUXoR+\nrqj1NxDhb+398VpIEnnQsB7fC4Sm225ltrmwY/Z89x32qJpg7YhZibLorF8GNQik\nthlGCRHd7q0MbvOkvQQiL3o4Og95v5WDATh4cNOO8o4ddCJnMqtvHtww+iL8k+2M\nFFvQqZHGXp4ohPNFDapBfUkYr9S+5uX1W6oEidUhQpyp6Kv3fF/gHcMFxE830lIn\n/zIfdvpXAgMBAAECggEALuXVW/O3qzEFbqRyyhdHU74d0SYF8IJc0giX7YCWdqSY\nENkuOeyKKh6BzgiK1bmn3DTvaITMfsxAmIBn658U2FUdeupSHjTBXFo4+ZO+yngj\nN97E6wo7XeH/WmSUrEJR8LMUIe1nBi7Xb3NHyWd8zND05g5Movvbv2YOtMzyjFIj\n0PNhRFEUQkqdeyIcZJcvEOVQHpDfCnrlCpTXEuvYk6Og7d38c56HEV5It1UPBr72\nHqXe0gMprJR/zxaSX2L98aTRfcQzBzI42GuYQIfOhQGRbxg/qeB6DIg23W17L3J2\nGzH4VmAULCaEoCjI9g4MNK/x8IOilFBawBQerDs7+QKBgQDysK7KJq6zw0YQGYyF\n2MvQQS4+1aey7pNgOdgqvgfD3iqTzNlcN5tv7fLQrXlyOMJ42uHJi+IpWNvoalXF\ntGh7/LUribIruRXG8DUmWRu7gAMnAfzJKjMLWr4O0E0ksZMddSqbmiG4xpb6QAl/\nJCj+xZcYconxivlFvoS1nMyPkwKBgQDHLtrTP6AE6NxrRkmOdSu2LNQp015LgL2l\nH3RTWYPmWIet9jtLLz4xS0nLKH07KcZZo6P6pqHTgCXFbdD5eRA3NNe0CptDWR1M\nhK6to/fbU40sfxF0mugl0ESXqfBmhrAYn4Ug19Vk3v4ZLbj4eG9i4pCAgxEMON9q\nzY5Sq068rQKBgErWAsAhV4PlNkimqDdp18d7IfiMR68cdGOa0razbI+QhY6X/3q5\nRvwn4tVIeQeoywcbb76HnRDk7sLnb1WMwR9imLc5ObDT3QxAbBNMLQoPemlf6oRZ\nt+3LaIoG35LuExBlXeMnjzh8PHgkoQkMrHuLkIEgaLsMALvp+OBL3qRzAoGAZiMK\npuSrY5kc3g1uzpQa1BHswX3XjpP3q2KTveHbFxUyjewDv6v8Ej7vGjQq81makoCt\nJ2ym8tN1iuWjESoZPJXmPjZqI4Dg20n2YKgCAv+3FqgaBVchz7IaWkMUOR670gSK\nuaqzjEQkvDiL7y2iwGw5eQy8gy3uss+xOYcKmwkCgYBWei1hetUEFyeDPjuf7q0a\nYFNg1aaYksA6R/od3JZ9h+YM6fSc5UuIgVNm3I+2/jiRPnYtVGLWd89pXRY4cHuU\nCEUiuOEWSRu1MDzkNYBUusB4BaYEC2OP8yqaI6/BuklG5RIEmOgVBqYUFy8lSplf\neSy2URUDzgMYj2dF3q5NuQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "gofinances-appcenter@pc-api-6940803112862480171-251.iam.gserviceaccount.com",
+  "client_id": "107121493870882846516",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gofinances-appcenter%40pc-api-6940803112862480171-251.iam.gserviceaccount.com"
+}
