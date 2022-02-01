@@ -22,6 +22,7 @@ import {
 
 export function SignIn() {
   const [ isLoading, setIsLoading] = useState(false);
+  // teste mudança screen 
   
   const { signInWithGoogle, signInWithApple } = useAuth();
   const theme = useTheme();
