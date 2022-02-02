@@ -7,5 +7,5 @@ export const categories = [
   { key: 'studies', name: 'Estudos', icon: 'book', color: '#9C001A' },
   { key: 'pet', name: 'Mascote', icon: 'github', color: '#704c4c'},
   { key: 'clothes', name: 'Roupas', icon: 'smile', color: '#086d21'},
-
+// TODO: CRIAR MAIS CATEGORIAS
 ];
