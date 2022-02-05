@@ -5,18 +5,23 @@
     "name": "gofinances",
     "slug": "gofinances",
     "icon": "./assets/logo.png",
-    "version": "1.0.1",
+    "version": "1.1",
     "scheme": "gofinances",
+    "splash":{
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5636D3"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "bundleIdentifier": "com.cmtehenz.gofinances",
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.1"
     },
     "android": {
       "package": "com.cmtehenz.gofinances",
-      "versionCode": 3
+      "versionCode": 5
     }
   }
 }
