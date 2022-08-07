@@ -24,7 +24,6 @@ export function TransactionTypeButton({
   isActive, 
   ...rest 
 }: Props){
-  console.log(isActive);
   return (
     <Container
       isActive={isActive}

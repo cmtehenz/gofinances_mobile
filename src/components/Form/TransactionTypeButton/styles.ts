@@ -1,12 +1,13 @@
 import styled, { css } from "styled-components/native";
 import { Feather } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
+import { TouchableOpacityProps } from "react-native";
 
 interface IconProps {
   type: 'up' | 'down';
 }
 
-interface ContainerProps {
+interface ContainerProps extends TouchableOpacityProps {
   isActive: boolean;
   type: 'up' | 'down';
 }
