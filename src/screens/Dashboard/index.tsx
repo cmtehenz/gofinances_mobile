@@ -23,6 +23,7 @@ import { getBottomSpace } from 'react-native-iphone-x-helper';
 export function Dashboard(){
   const data = [
     {
+      type: 'positive',
       title: 'Desenvolvimento de site',
       amount: 'R$ 12.000,00',
       category: {
@@ -32,22 +33,24 @@ export function Dashboard(){
       date: '13/04/2020'
     },
     {
-      title: 'Desenvolvimento de site',
-      amount: 'R$ 12.000,00',
+      type: 'negative',
+      title: 'Hamburgueria Pizza',
+      amount: 'R$ 59,00',
       category: {
-        name: 'Vendas',
-        icon: 'dollar-sign'
+        name: 'Alimentação',
+        icon: 'coffee'
       },
-      date: '13/04/2020'
+      date: '10/04/2020'
     },
     {
-      title: 'Desenvolvimento de site',
-      amount: 'R$ 12.000,00',
+      type: 'negative',
+      title: 'Aluguel do apartamento',
+      amount: 'R$ 1.200,00',
       category: {
-        name: 'Vendas',
-        icon: 'dollar-sign'
+        name: 'Casa',
+        icon: 'shopping-bag'
       },
-      date: '13/04/2020'
+      date: '27/03/2020'
     },
 ];
   
