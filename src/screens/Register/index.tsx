@@ -126,7 +126,7 @@ export function Register(){
 
           <Button 
             title="Enviar"
-            onPress={handleSubmit(handleRegister)}
+            onPress={() => handleSubmit(handleRegister)}
           />
         </Form>
         <Modal
