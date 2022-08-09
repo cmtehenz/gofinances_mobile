@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/BrunoSaibert/go-finances?color=%2304D361&style=for-the-badge">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cmtehenz/gofinances_mobile?color=%2304D361&style=for-the-badge">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/BrunoSaibert/go-finances?style=for-the-badge">
 
@@ -18,11 +18,11 @@
 
 </p>
 <h1 align="center">
-    <img alt="go-finances" title="#go-finances" src="https://raw.githubusercontent.com/cmtehenz/go-finances/main/src/assets/icon.png" width="200px" />
+    <img alt="go-finances" title="#go-finances" src="https://raw.githubusercontent.com/cmtehenz/gofinances_mobile/main/src/assets/icon.png" width="200px" />
 </h1>
 
 <h4 align="center">
-	🏁  GoFinances - Finalizado 🏁
+	🏁  GoFinances - Em Andamento 🏁
 </h4>
 
 <p align="center">
@@ -47,17 +47,17 @@ Para o desenvolvimento utilizamos **React Native**, **Expo** e **TypeScript**.
 
 ---
 
-## [](https://github.com/BrunoSaibert/go-finances#-%EF%B8%8F-funcionalidades) ⚙️ Funcionalidades
+## [](https://github.com/cmtehenz/cmtehenz/gofinances_mobile#-%EF%B8%8F-funcionalidades) ⚙️ Funcionalidades
 
 - Logar com uma conta Google ou Apple (apenas em iOS)
-- Cadastrar entradas e saídes financeiras
-- Listar cards com entradas, saídes e o total
-- Listar histórico de entradas e saídes financeiras
+- Cadastrar entradas e saídas financeiras
+- Listar cards com entradas, saídas e o total
+- Listar histórico de entradas e saídas financeiras
 - Apresentar gráfico de resumo com as categorias de saídas financeiras
 
 ---
 
-## [](https://github.com/BrunoSaibert/go-finances#--como-executar-o-projeto) 🚀 Como executar o projeto
+## [](https://github.com/cmtehenz/cmtehenz/gofinances_mobile#--como-executar-o-projeto) 🚀 Como executar o projeto
 
 ### Pré-requisitos
 
@@ -70,10 +70,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:BrunoSaibert/go-finances.git
+$ git clone git@github.com:cmtehenz/gofinances_mobile.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd go-finances
+$ cd gofinances_mobile
 
 # Instale as dependências
 $ npm install
@@ -96,13 +96,13 @@ REDIRECT_URI=
 
 ---
 
-## [](https://github.com/BrunoSaibert/go-finances#--layout) 🔖 Layout
+## [](https://github.com/cmtehenz/gofinances_mobile#--layout) 🔖 Layout
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/iqwSYiLThiSajHqWAQyVXO/GoFinances-Ignite?node-id=5154%3A131). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
 ---
 
-## [](https://github.com/BrunoSaibert/go-finances#--tecnologias) 🛠 Tecnologias
+## [](https://github.com/cmtehenz/gofinances_mobile#--tecnologias) 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -122,19 +122,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Gráficos com Victory Native
 - React Native Responsive Fontsize
 
-> Veja o arquivo [package.json](https://github.com/BrunoSaibert/go-finances/blob/main/web/package.json)
+> Veja o arquivo [package.json](https://github.com/cmtehenz/gofinances_mobile/blob/main/web/package.json)
 
 ---
 
-## [](https://github.com/BrunoSaibert/go-finances#--autor) 👨‍🚀 Autor
+## [](https://github.com/cmtehenz/gofinances_mobile#--autor) 👨‍🚀 Autor
 
 <a href="https://brunosaibert.com.br/">
- <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/40339324?s=460&u=4f5a7b83aa4e018b4eccbeaa1f6a6b8b04e0e4b7&v=4" width="100px;" alt="Bruno Henrique Saibert"/>
+ <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/40339324?s=460&u=4f5a7b83aa4e018b4eccbeaa1f6a6b8b04e0e4b7&v=4" width="100px;" alt="Gustavo Costa"/>
  <br />
- <sub><b>Bruno Henrique Saibert</b></sub></a>
+ <sub><b>Gustavo Costa</b></sub></a>
  <br />
 
-Feito com ❤️ por Bruno Henrique Saibert 👋 Entre em contato!
+Feito com ❤️ por Gustavo Costa 👋 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunohenriquesaibert/)](https://www.linkedin.com/in/brunohenriquesaibert/)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-1ca0f1?style=for-the-badge&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/bh_saibert)](https://twitter.com/bh_saibert)
