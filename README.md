@@ -1,18 +1,18 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cmtehenz/gofinances_mobile?color=%2304D361&style=for-the-badge">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/BrunoSaibert/go-finances?style=for-the-badge">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/cmtehenz/gofinances_mobile?style=for-the-badge">
 
-  <a href="https://github.com/BrunoSaibert/go-finances/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/BrunoSaibert/go-finances?style=for-the-badge">
+  <a href="https://github.com/cmtehenz/gofinances_mobile/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cmtehenz/gofinances_mobile?style=for-the-badge">
   </a>
 
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge">
-   <a href="https://github.com/BrunoSaibert/go-finances/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/BrunoSaibert/go-finances?style=for-the-badge">
+   <a href="https://github.com/cmtehenz/gofinances_mobile/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/cmtehenz/gofinances_mobile?style=for-the-badge">
   </a>
 
-  <a href="https://brunosaibert.com.br/">
+  <a href="#">
     <img alt="Feito por Gustavo Costa" src="https://img.shields.io/badge/feito%20por-Gustavo%20Saibert-%231b9?style=for-the-badge">
   </a>
 
@@ -35,7 +35,7 @@
  <a href="#--licença">Licença</a>
 </p>
 
-![](https://raw.githubusercontent.com/BrunoSaibert/go-finances/main/src/assets/cover.png)
+![](https://raw.githubusercontent.com/cmtehenz/gofinances_mobile/main/src/assets/cover.png)
 
 ## [](https://github.com/BrunoSaibert/go-finances#--sobre-o-projeto) 💻 Sobre o projeto
 
