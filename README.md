@@ -37,7 +37,7 @@
 
 ![](https://raw.githubusercontent.com/cmtehenz/gofinances_mobile/main/src/assets/cover.png)
 
-## [](https://github.com/BrunoSaibert/go-finances#--sobre-o-projeto) 💻 Sobre o projeto
+## [](https://github.com/cmtehenz/gofinances_mobile#--sobre-o-projeto) 💻 Sobre o projeto
 
 Aplicativo para ajudar no controle de finanças pessoas de forma simples.
 
