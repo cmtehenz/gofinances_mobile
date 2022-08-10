@@ -29,7 +29,6 @@ export function TransactionCard({ data }: IProps) {
   const category = categories.filter(
     item => item.key === data.category
   )[0];
-  console.log(category);
   return (
     <Container>
       <Title>{ data.name }</Title>
