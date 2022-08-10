@@ -13,12 +13,12 @@
   </a>
 
   <a href="#">
-    <img alt="Feito por Gustavo Costa" src="https://img.shields.io/badge/feito%20por-Gustavo%20Saibert-%231b9?style=for-the-badge">
+    <img alt="Feito por Gustavo Costa" src="https://img.shields.io/badge/feito%20por-Gustavo%20Costa-%231b9?style=for-the-badge">
   </a>
 
 </p>
 <h1 align="center">
-    <img alt="go-finances" title="#go-finances" src="https://raw.githubusercontent.com/cmtehenz/gofinances_mobile/main/src/assets/icon.png" width="200px" />
+    <img alt="go-finances" title="#go-finances" src="https://raw.githubusercontent.com/cmtehenz/gofinances_mobile/master/src/assets/icon.png" width="200px" />
 </h1>
 
 <h4 align="center">
@@ -35,7 +35,7 @@
  <a href="#--licença">Licença</a>
 </p>
 
-![](https://raw.githubusercontent.com/cmtehenz/gofinances_mobile/main/src/assets/cover.png)
+![](https://raw.githubusercontent.com/cmtehenz/gofinances_mobile/master/src/assets/cover.png)
 
 ## [](https://github.com/cmtehenz/gofinances_mobile#--sobre-o-projeto) 💻 Sobre o projeto
 
