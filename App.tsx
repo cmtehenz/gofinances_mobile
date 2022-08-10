@@ -1,3 +1,7 @@
+import 'react-native-gesture-handler';
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
+
 import React from "react";
 
 import theme from "@global/styles/theme";
@@ -8,9 +12,6 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { ThemeProvider } from "styled-components";
 
 import { AppRoutes } from "@/routes/app.routes";
-
-import 'intl';
-import 'intl/locale-data/jsonp/pt-BR';
 
 import { Text } from "./stylesApp";
 

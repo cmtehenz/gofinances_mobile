@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { CategorySelect } from "../CategorySelect";
 
@@ -83,12 +83,13 @@ export function Register() {
       name: form.name,
       amount: form.amount,
       type: transactionType,
-      category: category.name,
+      category: category.key,
       date: new Date(),
     };
 
     try {
       const dataKey = "@gofinances:transactions";
+      
       const data = await AsyncStorage.getItem(dataKey);
       const currentData = data ? JSON.parse(data) : [];
 
@@ -101,7 +102,7 @@ export function Register() {
       setCategory({ key: "category", name: "Categoria" });
       reset();
       console.log(dataFormatted);
-      // navigation.navigate("Listagem");
+      navigation.navigate("Listagem");
     } catch (error) {
       console.log(error);
       Alert.alert("Erro ao cadastrar transação");
@@ -159,7 +160,8 @@ export function Register() {
           </Fields>
 
           <Button 
-            title="Enviar" 
+            title="Enviar"
+            //@ts-ignore 
             onPress={handleSubmit(handleRegister)} />
         </Form>
 
