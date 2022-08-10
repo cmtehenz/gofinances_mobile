@@ -101,7 +101,6 @@ export function Register() {
       setTransactionType("");
       setCategory({ key: "category", name: "Categoria" });
       reset();
-      console.log(dataFormatted);
       navigation.navigate("Listagem");
     } catch (error) {
       console.log(error);
