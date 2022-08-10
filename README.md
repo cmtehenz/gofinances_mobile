@@ -22,7 +22,7 @@
 </h1>
 
 <h4 align="center">
-	🏁  GoFinances - Em Andamento 🏁
+	🚧📊  GoFinances - Em Andamento 🚧
 </h4>
 
 <p align="center">
@@ -129,20 +129,20 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## [](https://github.com/cmtehenz/gofinances_mobile#--autor) 👨‍🚀 Autor
 
 <a href="https://brunosaibert.com.br/">
- <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/40339324?s=460&u=4f5a7b83aa4e018b4eccbeaa1f6a6b8b04e0e4b7&v=4" width="100px;" alt="Gustavo Costa"/>
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/10881123?s=400&u=2de353d3c50f765d728d852846e2f39d96895046&v=4" width="100px;" alt="Gustavo Costa"/>
  <br />
  <sub><b>Gustavo Costa</b></sub></a>
  <br />
 
 Feito com ❤️ por Gustavo Costa 👋 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/brunohenriquesaibert/)](https://www.linkedin.com/in/brunohenriquesaibert/)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gustavo.costa/)](https://www.linkedin.com/in/gustavo.costa/)
 [![Twitter Badge](https://img.shields.io/badge/-Twitter-1ca0f1?style=for-the-badge&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/bh_saibert)](https://twitter.com/bh_saibert)
-[![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=for-the-badge&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=5541996758098&text=Olá!)](https://api.whatsapp.com/send?phone=5541996758098&text=Olá!)
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:brunosaibert@gmail.com)](mailto:brunosaibert@gmail.com)
+[![Whatsapp Badge](https://img.shields.io/badge/-Whatsapp-4CA143?style=for-the-badge&labelColor=4CA143&logo=whatsapp&logoColor=white&link=https://api.whatsapp.com/send?phone=55479881604628&text=Olá!)](https://api.whatsapp.com/send?phone=55479881604628&text=Olá!)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:cmtehenz@gmail.com)](mailto:cmtehenz@gmail.com)
 
 ---
 
-## [](https://github.com/BrunoSaibert/go-finances#--licença) 📝 Licença
+## [](https://github.com/cmtehenz/gofinances_mobile#--licença) 📝 Licença
 
 Este projeto esta sobe a licença MIT.
