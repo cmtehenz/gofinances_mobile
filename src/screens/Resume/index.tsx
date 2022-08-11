@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { RFValue } from 'react-native-responsive-fontsize';
 import { VictoryPie } from "victory-native";
+import { addMonths, subMonths, format } from "date-fns";
+import { ptBR } from 'date-fns/locale';
 
 import { useBottomTabBarHeight } from "@react-navigation/bottom-tabs";
 import { useTheme } from 'styled-components';
@@ -39,9 +41,20 @@ interface ICategoryData {
 }
 
 export function Resume() {
+  const [selectedDate, setSelectedDate] = useState(new Date()); 
   const [totalByCategories, setTotalByCategories] = useState<ICategoryData[]>([])
 
   const theme = useTheme();
+
+  function handleChangeDate(action: 'next' | 'prev'): void {
+    if(action === 'next'){
+      const newDate = addMonths(selectedDate, 1);
+      setSelectedDate(newDate);
+    }else{
+      const newDate = subMonths(selectedDate, 1);
+      setSelectedDate(newDate);
+    }
+  }
 
   async function loadData() {
     const dataKey = "@gofinances:transactions";
@@ -49,7 +62,11 @@ export function Resume() {
     const responseFormatted = response ? JSON.parse(response) : [];
 
     const expensives = responseFormatted
-      .filter((expensive: ITransactionData) => expensive.type === 'negative')
+      .filter((expensive: ITransactionData) => 
+      expensive.type === 'negative' && 
+      new Date(expensive.date).getMonth() === selectedDate.getMonth() &&
+      new Date(expensive.date).getFullYear() === selectedDate.getFullYear()
+      );
 
       const expensiveTotal = expensives
         .reduce((accumulator: number, expensive: ITransactionData)  => {
@@ -91,7 +108,7 @@ export function Resume() {
 
   useEffect(() => {
     loadData();
-  }, [])
+  }, [selectedDate])
 
   return (
     <Container>
@@ -107,13 +124,15 @@ export function Resume() {
         }}
       >
         <MonthSelect>
-          <MonthSelectButton>
+          <MonthSelectButton onPress={() => handleChangeDate('prev')} >
             <MonthSelectIcon name="chevron-left"/>
           </MonthSelectButton>
 
-          <Month>Agosto</Month>
+          <Month>
+            { format(selectedDate, 'MMMM, yyyy', { locale: ptBR }) }
+          </Month>
 
-          <MonthSelectButton>
+          <MonthSelectButton onPress={() => handleChangeDate('next')} >
             <MonthSelectIcon name="chevron-right"/>
           </MonthSelectButton>
         </MonthSelect>
