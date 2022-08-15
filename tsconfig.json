@@ -15,6 +15,9 @@
       "@global/*": [
         "src/global/*"
       ],
+      "@assets/*": [
+        "src/assets/*"
+      ]
     },
   },
   "extends": "expo/tsconfig.base"

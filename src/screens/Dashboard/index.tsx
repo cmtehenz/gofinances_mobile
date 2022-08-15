@@ -26,6 +26,7 @@ import {
 
 import { HighlightCard } from '@components/HighlightCard';
 import { TransactionCard, ITransactionCardProps } from '@components/TransactionCard';
+import { Loading } from '@/components/Loading';
 
 export interface DataListProps extends ITransactionCardProps {
   id: string;
@@ -153,12 +154,7 @@ export function Dashboard(){
     <Container>
       {
         isLoading ? 
-        <LoadContainer>
-          <ActivityIndicator 
-            color={theme.colors.primary} 
-            size="large"
-          />
-        </LoadContainer> :
+        <Loading /> :
         <> 
           <Header>
             <UserWrapper>

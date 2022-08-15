@@ -11,6 +11,7 @@ module.exports = function(api) {
           '@components': './src/components',
           '@screens': './src/screens',
           '@global': './src/global',
+          '@assets': './src/assets'
         }
       }]
     ]

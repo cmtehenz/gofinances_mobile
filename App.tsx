@@ -3,7 +3,7 @@ import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 
 import React from "react";
-
+import { StatusBar } from "react-native";
 import theme from "@global/styles/theme";
 
 import { NavigationContainer } from "@react-navigation/native";
@@ -12,6 +12,8 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { ThemeProvider } from "styled-components";
 
 import { AppRoutes } from "@/routes/app.routes";
+
+import { SignIn } from '@screens/SignIn';
 
 import { Text } from "./stylesApp";
 
@@ -37,7 +39,9 @@ export default function App() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider theme={theme}>
         <NavigationContainer>
-          <AppRoutes />
+          <StatusBar barStyle="light-content"/>
+          <SignIn />
+          {/* <AppRoutes /> */}
         </NavigationContainer>
       </ThemeProvider>
     </GestureHandlerRootView>
