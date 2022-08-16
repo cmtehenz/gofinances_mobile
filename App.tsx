@@ -15,6 +15,8 @@ import { AppRoutes } from "@/routes/app.routes";
 
 import { SignIn } from '@screens/SignIn';
 
+import { AuthProvider } from "./src/hooks/auth";
+
 import { Text } from "./stylesApp";
 
 import {
@@ -40,7 +42,9 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <NavigationContainer>
           <StatusBar barStyle="light-content"/>
-          <SignIn />
+          <AuthProvider>
+            <SignIn />
+          </AuthProvider>
           {/* <AppRoutes /> */}
         </NavigationContainer>
       </ThemeProvider>
