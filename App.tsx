@@ -6,14 +6,10 @@ import React from "react";
 import { StatusBar } from "react-native";
 import theme from "@global/styles/theme";
 
-import { NavigationContainer } from "@react-navigation/native";
+import { Routes } from "./src/routes";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 import { ThemeProvider } from "styled-components";
-
-import { AppRoutes } from "@/routes/app.routes";
-
-import { SignIn } from '@screens/SignIn';
 
 import { AuthProvider } from "./src/hooks/auth";
 
@@ -40,13 +36,11 @@ export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider theme={theme}>
-        <NavigationContainer>
+      
           <StatusBar barStyle="light-content"/>
           <AuthProvider>
-            <SignIn />
+            <Routes />
           </AuthProvider>
-          {/* <AppRoutes /> */}
-        </NavigationContainer>
       </ThemeProvider>
     </GestureHandlerRootView>
   );

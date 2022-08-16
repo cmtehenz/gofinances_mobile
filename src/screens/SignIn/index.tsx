@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { Alert } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 
@@ -19,11 +20,30 @@ import {
   Footer,
   FooterWrapper
 } from './styles';
+import ca from 'date-fns/esm/locale/ca/index.js';
 
 export function SignIn(){
-  const data = useAuth();
+  const { signInWithApple, signInWithGoogle, user } = useAuth();
+  
+  async function handleSignInWithGoogle() {
+    try {
+      await signInWithGoogle();
+      await console.log(user);
+    } catch (error) {
+      console.log(error);
+      Alert.alert('Não foi possível conectar a conta Google');
+    }
+  }
 
-  console.log(data);
+  async function handleSignInWithApple(){
+    try {
+      await signInWithApple();
+      console.log(user);
+    }catch (error) {
+      console.log(error);
+      Alert.alert('Não foi possível conectar a conta Google');
+    }
+  }
 
   return (
     <Container>
@@ -51,10 +71,12 @@ export function SignIn(){
           <SignInSocialButton 
             title="Entrar com Google"
             svg={GoogleSvg}
+            onPress={handleSignInWithGoogle}
           />
           <SignInSocialButton 
             title="Entrar com Apple"
             svg={AppleSvg}
+            onPress={handleSignInWithApple}
           />
         </FooterWrapper>
       

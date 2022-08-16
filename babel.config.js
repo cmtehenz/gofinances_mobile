@@ -14,7 +14,8 @@ module.exports = function(api) {
           '@assets': './src/assets',
           '@hooks': './src/hooks'
         }
-      }]
+      }],
+      ["inline-dotenv"],
     ]
   };
 };
