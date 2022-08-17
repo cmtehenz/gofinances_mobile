@@ -8,8 +8,8 @@ const { Navigator, Screen } = createStackNavigator();
 export function AuthRoutes(){
   return(
     <Navigator 
-      //@ts-ignore
-      headerMode="none">
+      screenOptions={{ 
+        headerShown: false }} >
       <Screen 
         name="SignIn"
         component={SignIn}
